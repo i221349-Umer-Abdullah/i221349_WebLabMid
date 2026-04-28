@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(node seed.js)",
+      "Bash(node server.js)",
+      "Bash(curl -s http://localhost:5000/api/tasks)",
+      "Bash(node -e \"const d=require\\('fs'\\).readFileSync\\('/dev/stdin','utf8'\\); const j=JSON.parse\\(d\\); j.forEach\\(t=>console.log\\(t.title, '|', t.priority, '|', t.status, '| assigned:', t.assignedVolunteers.length\\)\\)\")",
+      "Bash(curl -s http://localhost:5000/api/volunteers)",
+      "Bash(node -e \"const d=require\\('fs'\\).readFileSync\\('/dev/stdin','utf8'\\); JSON.parse\\(d\\).forEach\\(v=>console.log\\(v.name, '|', v.availability\\)\\)\")",
+      "Bash(curl -s http://localhost:5000/api/stats)",
+      "Bash(curl -s http://localhost:5000/api/unknown)",
+      "Bash(pkill -f \"node server.js\")",
+      "Bash(taskkill /F /IM node.exe)",
+      "Bash(node -e ' *)",
+      "Bash(node -e \"console.log\\(process.versions.openssl\\)\")"
+    ]
+  }
+}
